@@ -32,7 +32,7 @@
                 if($sizeFile < $max_size)
                 {
                     // On bouge l'image uploadé dans le dossier upload
-                    $link = '../img/'.uniqid() . '.' . strtolower(end($extension));
+                    $link = './img/'.uniqid() . '.' . strtolower(end($extension));
 
                     if(move_uploaded_file($tmpFile, $link ) ){
 
